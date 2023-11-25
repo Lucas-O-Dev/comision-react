@@ -1,0 +1,44 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        #root{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .navbar{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .nav{
+                    display: flex;
+                    flex-direction: row;
+                    .nav__list{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.625rem;
+                        list-style: none;
+                        flex-wrap: wrap;
+                        li{
+                            a{
+                                color: black;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
