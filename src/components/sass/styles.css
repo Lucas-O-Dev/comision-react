@@ -1,0 +1,104 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 4px solid yellow;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.conteiner {
+  margin: 0.75rem;
+  display: flex;
+  margin: 0 auto; /* centra el contenedor en la página */
+}
+.conteiner .navbar {
+  border-radius: 0.5rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  top: 3%;
+  right: 3%;
+  width: 140px;
+}
+.conteiner .navbar .navbar-brand {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+}
+.conteiner .navbar .navbar-brand .cart-icon {
+  display: flex;
+}
+.conteiner .navbar .navbar-brand .icon {
+  margin: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner .navbar .navbar-brand .navbar-burger {
+  display: flex;
+}
+.conteiner .navbar .navbar-brand .navbar-burger span {
+  background-color: #3c4245;
+}
+.conteiner .navbar .navbar-menu {
+  background-color: #8aa39b;
+}
+.conteiner .navbar .navbar-menu .navbar-item {
+  color: black;
+}
+.conteiner .navbar .navbar-menu .navbar-item:hover {
+  background-color: #616c6f;
+}
+.conteiner .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown {
+  background-color: white;
+  padding: 0;
+}
+.conteiner .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .navbar-item {
+  color: black;
+}
+.conteiner .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .navbar-item:hover {
+  background-color: #616c6f;
+}
+.conteiner .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .navbar-divider {
+  background-color: #3c4245;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 5%;
+  top: 4%;
+  gap: 0.375rem;
+  font-size: 1.5rem;
+}
+body .container a img {
+  margin-top: 0.625rem;
+}
+
+.cart-icon {
+  position: absolute;
+  top: 5.4%;
+  left: 36%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=styles.css.map */
