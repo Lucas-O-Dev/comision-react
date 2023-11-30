@@ -1,5 +1,5 @@
 import React from 'react'
-import myImage from '../assets/corazon.svg'
+// import myImage from '../assets/corazon.svg'
 import '../sass/styles.css'
 
 const brand = () => {

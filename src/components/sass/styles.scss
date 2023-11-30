@@ -1,10 +1,10 @@
 //mixins
 
 //variable
-
+@import "./base/settings";
 // components 
 
+@import './components/body';
 @import './components/navbar';
 @import './components/brand';
 @import './components/cartwidget';
-@import './components/body';

@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import myImage from '../assets/cart.svg';
+import myImage from '../assets/shoppingcart.png';
+import '../sass/base/_settings.scss'
 import '../sass/components/_navbar.scss';
+
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -29,7 +31,7 @@ const Navbar = () => {
         <div id="navbarBasicExample" className={`navbar-menu ${active ? 'is-active' : ''}`}>
           <div className="navbar-start">
 
-            <div className="navbar-item has-dropdown is-hoverable">
+            <div className="navbar-border">
 
               <div className="navbar-dropdown">
                 <a className="navbar-item">About</a>

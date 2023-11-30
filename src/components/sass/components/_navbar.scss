@@ -1,5 +1,6 @@
+@import "../base/settings";
+
 body{
-    border: 4px solid yellow;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -26,6 +27,7 @@ body{
             justify-content: space-around;
             align-items: center;
             width: 100px;
+            background-color: white;
             .cart-icon{
                 display: flex;
             }
@@ -37,40 +39,21 @@ body{
             }
             .navbar-burger{
                 display: flex;
-                span{
-                    background-color: #3c4245;
-                }
+                background-color: white;
             }
         }
         .navbar-menu {
-            background-color: #8aa39b;
-            .navbar-item {
-                color: black;
-    
-                &:hover {
-                    background-color: #616c6f;
-                }
-    
-                &.has-dropdown {
-                    .navbar-dropdown {
-                        background-color: white;
-                        padding: 0;
-                        .navbar-item {
-                            color: black;
-    
-                            &:hover {
-                                background-color: #616c6f;
-                            }
-                        }
-    
-                        .navbar-divider {
-                            background-color: #3c4245;
-                        }
-                    }
+            padding: 0;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            .navbar-start{
+                background-color: white;
+                border-radius: 10px;
+                .navbar-border{
+                    border-radius: 10px;
                 }
             }
         }
     }
 }
-
-
