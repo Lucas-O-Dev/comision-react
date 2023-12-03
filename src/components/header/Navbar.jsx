@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import myImage from '../assets/shoppingcart.png';
+import CartWidget from './CartWidget'
+import Brand from './Brand'
 import '../sass/base/_settings.scss'
 import '../sass/components/_navbar.scss';
 
@@ -8,7 +10,9 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <>
+    <header className='header-home'>
+            <Brand />
+      <CartWidget />
       <div className="conteiner">
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
@@ -34,11 +38,11 @@ const Navbar = () => {
             <div className="navbar-border">
 
               <div className="navbar-dropdown">
-                <a className="navbar-item">About</a>
+                <a className="navbar-item">Home</a>
+                <a className="navbar-item">Products</a>
                 <a className="navbar-item">Brands</a>
-                <a className="navbar-item">Contact</a>
                 <hr className="navbar-divider" />
-                <a className="navbar-item">Report an issue</a>
+                <a className="navbar-item">About</a>
               </div>
             </div>
           </div>
@@ -46,7 +50,7 @@ const Navbar = () => {
         </div>
       </nav>
       </div>
-    </>
+    </header>
   );
 };
 

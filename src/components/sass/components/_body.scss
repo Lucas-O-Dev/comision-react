@@ -1,6 +1,14 @@
 body{
-    background-image: url('/src/components/assets/cropped-1368-672-1300282.jpg'); 
-    background-size:contain; /* Ajusta según tus preferencias */
-    background-position: top center; /* Ajusta según tus preferencias */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    // background-image: url('/src/components/assets/background-body.jpg'); 
+    // background-size:contain; /* Ajusta según tus preferencias */
+    // background-position: top; /* Ajusta según tus preferencias */
+    // background-repeat: no-repeat; /* Evita que la imagen se repita */
+    // border-bottom: 1px solid white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

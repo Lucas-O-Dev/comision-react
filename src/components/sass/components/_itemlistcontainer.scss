@@ -1,0 +1,47 @@
+#root{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-home{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    .conteiner-greeting{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .greeting{
+            display: flex;
+            font-size: 24px;
+            margin-top: 3.75rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+            background-color: grey;
+            border-radius: 0.75rem;
+            padding: 0.5rem;
+            color: black;
+            transition: transform 0.3s ease-in-out; // Agrega una transición a la propiedad transform
+
+            &:hover {
+                transform: scale(1.1); // Efecto de escala al pasar el ratón sobre el párrafo
+            }
+        }
+    }
+    .list-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        .cards-home{
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+}

@@ -1,57 +1,52 @@
 @import "../base/settings";
 
-body{
-    height: 100vh;
+.header-home{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.conteiner{
-    margin: 0.75rem;
-    display: flex;
-    margin: 0 auto; /* centra el contenedor en la página */
-    .navbar{
-        border-radius: 0.5rem;
-        position: absolute;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #333; /* Cambia el color de fondo según tus preferencias */
+    .conteiner{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: white;
-        top: 3%;
-        right: 3%;
-        width: 140px;
-        .navbar-brand{
+        margin: 0;
+        .navbar{
+            border-radius: 0.5rem;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            width: 100px;
-            background-color: white;
-            .cart-icon{
+            flex-direction: column;
+            background-color: transparent;
+            .navbar-brand{
                 display: flex;
-            }
-            .icon{
-                margin: 0.25rem;
-                display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
+                width: 100px;
+                background-color: transparent;
+                .icon{
+                    margin: 0.25rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .navbar-burger{
+                    display: flex;
+                    background-color: transparent;
+                    span{
+                        color: white;
+                    }
+                }
             }
-            .navbar-burger{
-                display: flex;
-                background-color: white;
-            }
-        }
-        .navbar-menu {
-            padding: 0;
-            border-radius: 10px;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-            .navbar-start{
-                background-color: white;
+            .navbar-menu {
+                padding: 0;
                 border-radius: 10px;
-                .navbar-border{
+                background-color: white;
+                .navbar-start{
+                    background-color: white;    
                     border-radius: 10px;
+                    .navbar-border{
+                        border-radius: 10px;
+                    }
                 }
             }
         }
