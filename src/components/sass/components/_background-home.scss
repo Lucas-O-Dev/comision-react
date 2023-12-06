@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 412px;
+    height: 27.5rem;
     background-image: url('/src/components/assets/background-body.jpg');
     background-size: cover; /* Ajusta el tamaño de la imagen de fondo para que se ajuste al contenedor */
     background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
     background-position:center;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1.25rem;
     h2{
         color: white;
         margin-bottom: 0.75rem;

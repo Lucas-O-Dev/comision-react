@@ -7,7 +7,7 @@ const Brand = () => {
     return ( 
         <>
             <div className="container-brand">
-            <a href="#">
+            <a href="#" className='link-logo'>
                 <img src={myImage} alt="logo-item" width='50' height='50'/>
             </a>
             </div>

@@ -3,3 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@mixin mediamobile {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin mediatablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediahomealt {
+    @media screen and (max-width: 670px) {
+        @content;
+    }
+}

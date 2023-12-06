@@ -2,12 +2,22 @@
     .container-brand{
         display: flex;
         font-size: 1.5rem;
+        .link-logo{
+            display: flex;
+            justify-content: center;
+            transition: transform 0.3s ease-in-out; // Agrega una transición a la propiedad transform
+
+            &:hover {
+                transform: scale(1.1); // Efecto de escala al pasar el ratón sobre el párrafo
+            }
+        }
         h1{
             color: black;
         }
         a{
             img{
-                margin-top: 0.625rem;
+                width: 30px;
+                height: 30px;
             }
         }
     }
