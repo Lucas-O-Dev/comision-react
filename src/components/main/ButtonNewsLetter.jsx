@@ -6,7 +6,6 @@ const ButtonNewsLetter = () => {
 
   const handleClick = () => {
     setSubscribed(true);
-    // Aquí puedes realizar otras acciones relacionadas con la suscripción
   };
 
   return (

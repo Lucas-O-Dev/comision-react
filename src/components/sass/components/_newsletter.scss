@@ -12,17 +12,18 @@ $input-focus-border-color: white;
 $input-has-value-border-color: #e74c3c;
 
 .newsletter-conteiner{
+    padding: 1.125rem;
     width: 100%;
     height: 18.75rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background-image: url(https://http2.mlstatic.com/D_NQ_765918-MLA73116997080_122023-OO.webp);
     background-position:center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
+    margin-top: 1.125rem;
     .submit {
         margin-top: 0.625rem;
         background-color: #74d3ae; /* Color de fondo cuando no está suscrito */
@@ -49,9 +50,12 @@ $input-has-value-border-color: #e74c3c;
             margin-right: 5px;
         }
         }
-    p{
-        margin-bottom: 0.625rem;
-    }
+        p {
+            margin-bottom: 0.625rem;
+            font-weight: bold;
+            color: white;
+            line-height: 1.5; /* Ajusta la altura de línea para mejorar la legibilidad */
+        }
     // Estilo principal del input
 input {
     height: $input-height;

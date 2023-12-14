@@ -1,13 +1,16 @@
-// import myImage from '../assets/background-body.jpg'
-import '../sass/components/_background-home.scss'
+import React from 'react';
+import InfoVeneciaHome from './InfoVeneciaHome';
+import '../sass/components/_background-home.scss';
 
 const Background = () => {
-    return (
-        <div className="conteiner-background">
-            <h2>Venecia</h2>
-            <p>Discover the essence of beauty with our high-quality cosmetics and haircare products.<br/> From skincare to premium makeup and hair treatments, enhance your natural beauty with our curated selection.</p>
-        </div>
-    );
-}
+  return (
+    <>
+    <div className="conteiner-background">
+    <h2>Venecia</h2>
+    </div>
+    <InfoVeneciaHome/>
+    </>
+  );
+};
 
-export default Background;
+export default Background; 

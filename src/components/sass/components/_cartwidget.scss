@@ -1,14 +1,16 @@
 
-.cart-icon{
+.icon{
 display: flex;
-        .icon{
-            width: 1.875rem;
-            height: 1.875rem;
-            display: flex;
-        }
-        span{
-            display: flex;
-            color: white;
-            font-size: 0.75rem;
+        .cart-icon{
+            .icon{
+                width: 16px;
+                height: 16px;
+                display: flex;
+            }
+            span{
+                display: flex;
+                color: white;
+                font-size: 0.75rem;
+            }
         }
 }

@@ -24,45 +24,12 @@ body {
   display: flex;
   margin: 0;
 }
-.header-home .conteiner .navbar {
-  border-radius: 0.5rem;
+.header-home .conteiner nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: transparent;
 }
-.header-home .conteiner .navbar .navbar-brand {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100px;
-  background-color: transparent;
-}
-.header-home .conteiner .navbar .navbar-brand .icon {
-  margin: 0.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header-home .conteiner .navbar .navbar-brand .navbar-burger {
-  display: flex;
-  background-color: transparent;
-}
-.header-home .conteiner .navbar .navbar-brand .navbar-burger span {
+.header-home .conteiner nav a {
   color: white;
-}
-.header-home .conteiner .navbar .navbar-menu {
-  padding: 0;
-  border-radius: 10px;
-  background-color: white;
-}
-.header-home .conteiner .navbar .navbar-menu .navbar-start {
-  background-color: white;
-  border-radius: 10px;
-}
-.header-home .conteiner .navbar .navbar-menu .navbar-start .navbar-border {
-  border-radius: 10px;
+  margin: 0 0.5rem;
 }
 
 .container-brand {
@@ -127,14 +94,10 @@ body {
   align-items: center;
   align-items: center;
   background-color: #f49cbb;
+  border: 1px solid black;
   border-radius: 0.75rem;
   padding: 0.625rem;
   color: black;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-}
-.main-home .conteiner-greeting .greeting:hover {
-  transform: scale(1.1);
 }
 .main-home .list-container {
   display: flex;

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import myImage from '../assets/shoppingcart.png';
 import CartWidget from './CartWidget'
 import Brand from './Brand'
+import { Link } from 'react-router-dom';
 import '../sass/base/_settings.scss'
 import '../sass/components/_navbar.scss';
 
@@ -12,9 +13,8 @@ const Navbar = () => {
   return (
     <header className='header-home'>
             <Brand />
-      <CartWidget />
       <div className="conteiner">
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+      {/* <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
             <a
               role="button"
@@ -48,8 +48,17 @@ const Navbar = () => {
           </div>
 
         </div>
-      </nav>
+      </nav> */}
+<nav>
+  <Link to={'/'}>Home</Link>
+  <Link to={'/ItemListContainer'}>Products</Link>
+  <Link to={'/Contact'}>Contact</Link>
+</nav>
+
       </div>
+
+      <CartWidget />
+
     </header>
   );
 };

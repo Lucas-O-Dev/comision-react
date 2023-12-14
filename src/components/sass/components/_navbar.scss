@@ -12,45 +12,55 @@
         .conteiner{
             display: flex;
             margin: 0;
-            .navbar{
-                border-radius: 0.5rem;
+            nav{
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                background-color: transparent;
-                .navbar-brand{
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    width: 100px;
-                    background-color: transparent;
-                    .icon{
-                        margin: 0.25rem;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    .navbar-burger{
-                        display: flex;
-                        background-color: transparent;
-                        span{
-                            color: white;
-                        }
-                    }
+                a{
+                    color: white;
+                    margin: 0 0.5rem;
                 }
-                .navbar-menu {
-                    padding: 0;
-                    border-radius: 10px;
-                    background-color: white;
-                    .navbar-start{
-                        background-color: white;    
-                        border-radius: 10px;
-                        .navbar-border{
-                            border-radius: 10px;
-                        }
-                    }
+                a:hover{
+                    color: grey;
                 }
             }
+            // .navbar{
+            //     border-radius: 0.5rem;
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            //     flex-direction: column;
+            //     background-color: transparent;
+            //     .navbar-brand{
+            //         display: flex;
+            //         justify-content: space-around;
+            //         align-items: center;
+            //         width: 100px;
+            //         background-color: transparent;
+            //         .icon{
+            //             margin: 0.25rem;
+            //             display: flex;
+            //             justify-content: center;
+            //             align-items: center;
+            //         }
+            //         .navbar-burger{
+            //             display: flex;
+            //             background-color: transparent;
+            //             span{
+            //                 color: white;
+            //             }
+            //         }
+            //     }
+            //     .navbar-menu {
+            //         padding: 0;
+            //         border-radius: 10px;
+            //         background-color: white;
+            //         .navbar-start{
+            //             background-color: white;    
+            //             border-radius: 10px;
+            //             .navbar-border{
+            //                 border-radius: 10px;
+            //             }
+            //         }
+            //     }
+            // }
         }
     }
