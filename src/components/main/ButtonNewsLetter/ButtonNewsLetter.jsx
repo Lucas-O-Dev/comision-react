@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HealthAndBeautyImage from "../assets/check.svg";
+import HealthAndBeautyImage from "./check.svg";
 
 const ButtonNewsLetter = () => {
   const [subscribed, setSubscribed] = useState(false);

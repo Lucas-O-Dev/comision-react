@@ -1,6 +1,6 @@
 import React from "react";
-import ButtonNewsLetter from "./ButtonNewsLetter"
-import '../sass/components/_newsletter.scss'
+import ButtonNewsLetter from "../ButtonNewsLetter/ButtonNewsLetter"
+import './_newsletter.scss'
 
 const NewsLetter = () => {
     return ( 

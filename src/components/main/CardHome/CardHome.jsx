@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/components/_cardhome.scss'
+import './_cardhome.scss'
 
 export const CardHome = (props) => {
     const { title, desc, cost, imageSrc } = props

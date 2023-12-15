@@ -31,6 +31,9 @@ body {
   color: white;
   margin: 0 0.5rem;
 }
+.header-home .conteiner nav a:hover {
+  color: grey;
+}
 
 .container-brand {
   display: flex;
@@ -52,15 +55,15 @@ body {
   height: 30px;
 }
 
-.cart-icon {
+.icon {
   display: flex;
 }
-.cart-icon .icon {
-  width: 1.875rem;
-  height: 1.875rem;
-  display: flex;
+.icon .cart-icon img {
+  border: 4px solid red;
+  width: 16px;
+  height: 16px;
 }
-.cart-icon span {
+.icon .cart-icon span {
   display: flex;
   color: white;
   font-size: 0.75rem;
@@ -78,6 +81,7 @@ body {
   width: 100%;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .main-home .conteiner-greeting {
   display: flex;
@@ -87,9 +91,8 @@ body {
 .main-home .conteiner-greeting .greeting {
   cursor: pointer;
   display: flex;
-  font-size: 24px;
-  margin-top: 3.75rem;
-  margin-bottom: 2rem;
+  margin-top: 30px;
+  margin-bottom: 1.25rem;
   justify-content: center;
   align-items: center;
   align-items: center;
@@ -113,4 +116,34 @@ body {
   width: 100%;
   padding: 1rem;
   flex-wrap: wrap;
+}
+
+footer {
+  border-top: 2px solid #f49cbb;
+  display: flex;
+  border-radius: 0;
+  width: 100%;
+  padding: 1em 0;
+  text-align: center;
+  margin-top: auto;
+  font-size: 10px;
+  align-self: flex-end;
+  color: white;
+  background-color: black;
+}
+footer .grid-foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .grid-foot .spanes span {
+  margin: 0 0.375rem;
+}
+footer .grid-foot .footer-content-container a {
+  text-decoration: none;
+  color: white;
+  margin: 0 0.375rem;
+}
+footer .grid-foot .footer-content-container a:hover {
+  color: grey;
 }/*# sourceMappingURL=styles.css.map */

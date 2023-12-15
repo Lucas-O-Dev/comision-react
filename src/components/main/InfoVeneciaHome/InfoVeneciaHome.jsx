@@ -1,5 +1,5 @@
 import React from 'react'
-import '../sass/components/_infoveneciahome.scss'
+import './_infoveneciahome.scss'
 
 function InfoVeneciaHome() {
   return (

@@ -1,5 +1,5 @@
     import React, { useState } from 'react';
-    import '../sass/components/_itemcount.scss'
+    import './_itemcount.scss'
 
     const ItemCount = ({ initial, min, max, onAdd }) => {
     const [count, setCount] = useState(initial);

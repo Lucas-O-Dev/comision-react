@@ -1,6 +1,6 @@
 import React from 'react';
-import InfoVeneciaHome from './InfoVeneciaHome';
-import '../sass/components/_background-home.scss';
+import InfoVeneciaHome from '../InfoVeneciaHome/InfoVeneciaHome';
+import './_background-home.scss';
 
 const Background = () => {
   return (

@@ -1,7 +1,7 @@
-import { useEffect } from "react";
+
 import { useState } from "react";
-import useFetch from "../hooks/useFetch";
-import '../sass/components/_pokeapi.scss'
+import useFetch from "../../hooks/useFetch";
+import './_pokeapi.scss'
 
 const PokeApi = () => {
     const [id, setId] = useState(1);
