@@ -1,5 +1,6 @@
 import React from 'react';
 import InfoVeneciaHome from '../InfoVeneciaHome/InfoVeneciaHome';
+import ReserveHome from '../Reserve/ReserveHome';
 import './_background-home.scss';
 
 const Background = () => {
@@ -9,6 +10,7 @@ const Background = () => {
     <h2>Venecia</h2>
     </div>
     <InfoVeneciaHome/>
+    <ReserveHome/>
     </>
   );
 };

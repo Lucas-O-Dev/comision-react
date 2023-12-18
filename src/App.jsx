@@ -26,7 +26,7 @@ import './components/sass/scss/_body.scss';
     >
       {/* Rutas anidadas solo para Navbar */}
         <Route path="/" element={<Background />} />
-        <Route path="/Category/:categoryId" element={<ItemListContainer greeting="Special Offers!" />} />
+        <Route path="/Category/Products" element={<ItemListContainer greeting="Special Offers!" />} />
         <Route path="/Item/:productId" element={<AddToCart />} />
         <Route path="/Category/:categoryId" element={<Contact />} />
     </Route>

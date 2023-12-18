@@ -49,9 +49,10 @@ const Navbar = () => {
       </nav> */}
 <nav>
   <Link to={'/'}>Home</Link>
-  <Link to={'/Category/Catalog'}>Products</Link>
+  <Link to={'/Category/Products'}>Products</Link>
   <Link to={'/Category/Contact'}>Contact</Link>
 </nav>
+
 
       </div>
 
