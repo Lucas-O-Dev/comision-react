@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import CartWidget from '../CartWidget'
-import Brand from '../Brand'
+import CartWidget from '../CartWidget/CartWidget'
+import Brand from '../Brand/Brand'
 import { Link } from 'react-router-dom';
 import './_navbar.scss';
 

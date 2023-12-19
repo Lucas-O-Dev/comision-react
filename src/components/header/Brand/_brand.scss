@@ -1,12 +1,14 @@
 
     .container-brand{
+        margin-top: 6px;
         display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 1.5rem;
-        .link-logo{
-            display: flex;
-            justify-content: center;
+        .brandLogo{
             transition: transform 0.3s ease-in-out; // Agrega una transición a la propiedad transform
-
+            justify-content: center;
+            align-items: center;
             &:hover {
                 transform: scale(1.1); // Efecto de escala al pasar el ratón sobre el párrafo
             }
