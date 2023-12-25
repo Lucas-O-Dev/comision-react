@@ -2,6 +2,7 @@ import React from 'react'
 import './_footer.scss'
 
 function Footer() {
+
   return (
     
     <footer>

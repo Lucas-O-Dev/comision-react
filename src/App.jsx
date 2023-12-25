@@ -1,17 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/header/NavBar/Navbar';
 import ItemListContainer from './components/main/ItemListContainer/ItemListContainer';
 import Contact from './components/main/Contact/Contact'
 import Background from './components/main/BackgroundHome/BackgroundHome'
 import Footer from './components/footer/Footer';
-import AddToCart from './components/main/AddToCart/AddToCart';
+import ItemDetail from './components/main/AddToCart/ItemDetail';
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import { CartContext } from './Context/CartContext';
 import './components/sass/scss/_body.scss';
 
     function App() {
-        
-    return (
+
+        const [cart, setCart] = useState([])
+        console.log(cart)
+        return (
+<CartContext.Provider value = {{
+    cart
+}}>
 <>
+<ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar
+        closeOnClick
+        pauseOnHover
+        draggable
+      />
 <BrowserRouter>
     <Routes>
     {/* Este Route contendrá toda la aplicación */}
@@ -27,7 +42,7 @@ import './components/sass/scss/_body.scss';
       {/* Rutas anidadas solo para Navbar */}
         <Route path="/" element={<Background />} />
         <Route path="/Category/Products" element={<ItemListContainer greeting="Special Offers!" />} />
-        <Route path="/Item/:productId" element={<AddToCart />} />
+        <Route path="/Item/:productId" element={<ItemDetail />} />
         <Route path="/Category/:categoryId" element={<Contact />} />
     </Route>
 
@@ -39,31 +54,9 @@ import './components/sass/scss/_body.scss';
 
         <Footer/>
 
-        </>
+    </>
 
-// <>
-
-        // <Container>
-        //     <Background/>  
-        // </Container> 
-
-        // <Container>
-        //     <InfoVeneciaHome/>
-        // </Container>
-
-        // <Container>
-        //     <ItemListContainer greeting="Special Offers!" />
-        // </Container>
-
-        // <Container>
-        //     <NewsLetter />
-        // </Container>
-
-        // {/* <Container>
-        //     <AddToCart />
-        // </Container> */}
-
-        // </>
+</CartContext.Provider>
     );
     }
 

@@ -17,15 +17,15 @@ const PokeApi = () => {
 
     return (
 
-        <div>
-            <h2>Pokeapi</h2>
+        <div className="containerOtherProducts">
+            <p>Would you like to see other products?</p>
             <hr />
             {pokemon && (
                 <>
                     <h2>{pokemon.name}</h2>
                     <img src={pokemon.sprites.front_default} alt={pokemon.name} />
                 </>)}
-                <div>
+                <div className="containerButtonApi">
                     <button className="btn-api" onClick={handleAnterior}>Anterior</button>
                     <button className="btn-api" onClick={handleSiguiente}>Siguiente</button>
                 </div>

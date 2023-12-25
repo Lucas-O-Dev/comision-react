@@ -44,10 +44,6 @@ import './_buttonreserve.scss'
                 <h1>Venecia</h1>
                 <form onSubmit={handleSubmit}>
                     <label>
-                    Nombre
-                    <input type="text" required />
-                    </label>
-                    <label>
                     Email
                     <input type="email" required />
                     </label>
