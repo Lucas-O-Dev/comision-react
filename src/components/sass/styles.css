@@ -1,5 +1,6 @@
 @charset "UTF-8";
 body {
+  font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

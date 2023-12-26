@@ -7,7 +7,7 @@ const Background = () => {
   return (
     <>
     <div className="conteiner-background">
-    <h2>Venecia</h2>
+    <h2>VENECIA</h2>
     </div>
     <InfoVeneciaHome/>
     <ReserveHome/>

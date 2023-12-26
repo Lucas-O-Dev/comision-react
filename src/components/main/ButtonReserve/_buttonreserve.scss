@@ -26,10 +26,10 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             width: 17.5rem; /* Ancho del popup */
-            height: 80vh; /* Altura máxima del popup */
+          
             overflow-y: auto; /* Agregado para permitir desplazamiento vertical si es necesario */
             position: relative;
-            background: linear-gradient(45deg, #ff7300, #ff0035, #00e7ff, #0085ff);
+            background: linear-gradient(45deg, #666, #333, #ccc, #888);
             background-size: 400% 400%;
             animation: gradientAnimation 10s ease infinite;
           
@@ -49,6 +49,7 @@
               font-size: 20px;
               color: black;
               margin-bottom: 20px;
+              font-weight: bold;
             }
           
             form {

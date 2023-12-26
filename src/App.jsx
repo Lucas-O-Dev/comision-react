@@ -1,63 +1,54 @@
-import React, { useState } from 'react';
+// App.jsx
+import React from 'react';
 import Navbar from './components/header/NavBar/Navbar';
 import ItemListContainer from './components/main/ItemListContainer/ItemListContainer';
-import Contact from './components/main/Contact/Contact'
-import Background from './components/main/BackgroundHome/BackgroundHome'
+import Contact from './components/main/Contact/Contact';
+import Background from './components/main/BackgroundHome/BackgroundHome';
 import Footer from './components/footer/Footer';
-import ItemDetail from './components/main/AddToCart/ItemDetail';
+import ItemDetail from './components/main/ItemDetail/ItemDetail';
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-import { CartContext } from './Context/CartContext';
+import { CartProvider } from './Context/CartContext';
 import './components/sass/scss/_body.scss';
 
-    function App() {
+function App() {
+  return (
+    <CartProvider>
+      <>
+        <ToastContainer
+          position="top-right"
+          autoClose={2000}
+          hideProgressBar
+          closeOnClick
+          pauseOnHover
+          draggable
+        />
+        <BrowserRouter>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div>
+                  <Navbar />
+                  <Outlet />
+                </div>
+              }
+            >
+              <Route path="/" element={<Background />} />
+              <Route path="/Category/Products" element={<ItemListContainer greeting="Special Offers!" />} />
+              <Route path="/Item/:productId" element={<ItemDetail />} />
+              <Route path="/Category/:categoryId" element={<Contact />} />
+            </Route>
 
-        const [cart, setCart] = useState([])
-        console.log(cart)
-        return (
-<CartContext.Provider value = {{
-    cart
-}}>
-<>
-<ToastContainer
-        position="top-right"
-        autoClose={2000}
-        hideProgressBar
-        closeOnClick
-        pauseOnHover
-        draggable
-      />
-<BrowserRouter>
-    <Routes>
-    {/* Este Route contendrá toda la aplicación */}
-    <Route
-        path="/"
-        element={
-        <div>
-            <Navbar />
-            <Outlet />
-        </div>
-        }
-    >
-      {/* Rutas anidadas solo para Navbar */}
-        <Route path="/" element={<Background />} />
-        <Route path="/Category/Products" element={<ItemListContainer greeting="Special Offers!" />} />
-        <Route path="/Item/:productId" element={<ItemDetail />} />
-        <Route path="/Category/:categoryId" element={<Contact />} />
-    </Route>
+            <Route path="/not-found" element={<h2>Error: Notfound</h2>} />
+            <Route path="*" element={<Navigate to={'/not-found'} />} />
+          </Routes>
+        </BrowserRouter>
 
-    {/* Ruta para "/not-found" */}
-    <Route path="/not-found" element={<h2>Error: Notfound</h2>} />
-    <Route path="*" element={<Navigate to={'/not-found'} />} />
-    </Routes>
-</BrowserRouter>
-
-        <Footer/>
-
-    </>
-
-</CartContext.Provider>
-    );
-    }
+        <Footer />
+      </>
+    </CartProvider>
+  );
+}
 
 export default App;

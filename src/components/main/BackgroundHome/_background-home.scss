@@ -1,26 +1,42 @@
 
-.conteiner-background{
+.conteiner-background {
+    /* Otras reglas de estilo para tu contenedor */
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 440px;
     background-image: url('/src/components/assets/background-body.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     justify-content: center;
     align-items: center;
     padding: 1.25rem;
-    h2{
+
+    h2 {
         color: white;
         margin-bottom: 0.75rem;
         font-size: 1.5rem;
+        /* Propiedades de la animación */
+        opacity: 0;
+        transform: translateX(-14px);
+        animation: fadeInRight 2s ease-out forwards;
     }
-    p{
+
+    p {
+        /* Otras reglas de estilo para tu párrafo */
         color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    /* Definición de la animación */
+    @keyframes fadeInRight {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }

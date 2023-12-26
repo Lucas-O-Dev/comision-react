@@ -9,20 +9,36 @@
         height: 40px;
         padding: 8px;
         border-bottom: 2px solid #f49cbb;
-        .conteiner{
-            display: flex;
-            margin: 0;
-            nav{
-                display: flex;
-                a{
-                    color: white;
-                    margin: 0 0.5rem;
-                }
-                a:hover{
-                    color: grey;
-                }
+    }
+    .conteiner{
+        display: flex;
+        margin: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        gap: 8px;
+        a {
+            color: white;
+            text-decoration: none; /* Quita la decoración predeterminada del enlace */
+            transition: color 0.3s ease; /* Agrega una transición de color al pasar el ratón */
             }
-            // .navbar{
+            
+            a:hover {
+                color: gray; /* Cambia el color al pasar el ratón sobre el enlace */
+            }
+        }
+        
+        .header-home.nav-visible nav {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    // .navbar{
             //     border-radius: 0.5rem;
             //     display: flex;
             //     justify-content: center;
@@ -62,5 +78,3 @@
             //         }
             //     }
             // }
-        }
-    }

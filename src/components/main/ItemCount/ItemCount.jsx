@@ -32,7 +32,7 @@ const ItemCount = ({ initial, min, max, onAdd }) => {
       onAdd(count);
 
       // Agrega el toast de éxito aquí
-      toast.success('Agregado al carrito con éxito', {
+      toast.success('Added to cart successfully.', {
         position: 'top-right',
         autoClose: 2000, // Cerrar después de 2000ms (2 segundos)
         hideProgressBar: true,
@@ -62,7 +62,7 @@ const ItemCount = ({ initial, min, max, onAdd }) => {
       </div>
       <ColorSelector />
       <button className="add-to-cart-button" onClick={handleAddToCart}>
-        Agregar al carrito
+        Add to cart!
       </button>
     </div>
   );
