@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './_buttoncontactus.scss'; // Asegúrate de tener un archivo de estilos (CSS o SCSS) para el componente
+import ButtonSending from '../ButtonSending/ButtonSending';
+import ButtonGeneral from '../ButtonGeneral/ButtonGeneral'
 
 const PopupButton = () => {
   const [showForm, setShowForm] = useState(false);
@@ -35,24 +37,21 @@ const PopupButton = () => {
 
   return (
     <div className='containerButtonContactUs'>
-      <button onClick={toggleForm}>Contact Us!</button>
-
+      {/* <button onClick={toggleForm}>Contact Us!</button> */}
+      <ButtonGeneral text='Contact Us!' onClick={toggleForm}/>
       {showForm && (
         <div className="popup-container">
           <div className="popup" ref={popupRef}>
-            <h1>Venecia</h1>
             <form onSubmit={handleSubmit}>
               <label>
                 Email
                 <input type="text" required />
-                <p className="required-message">Required.</p>
               </label>
               <label>
                 Message
                 <input type="email" required />
-                <p className="required-message">Required.</p>
               </label>
-              <button type="submit" className='btnSubmit'>Submit</button>
+              <ButtonSending/>
             </form>
           </div>
         </div>

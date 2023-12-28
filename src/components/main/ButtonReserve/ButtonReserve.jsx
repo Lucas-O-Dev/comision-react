@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { toast } from 'react-toastify';
+import ButtonSending from '../ButtonSending/ButtonSending'
+import ButtonGeneral from '../ButtonGeneral/ButtonGeneral'
 import 'react-toastify/dist/ReactToastify.css';
 import './_buttonreserve.scss';
 
@@ -43,12 +45,11 @@ const ButtonReserve = () => {
 
   return (
     <div className='containerButtonContactUs'>
-      <button onClick={toggleForm}>Reserve</button>
-
+      {/* <button onClick={toggleForm}>Reserve</button> */}
+      <ButtonGeneral text='Reserve' onClick={toggleForm}/>
       {showForm && (
         <div className="popup-container">
           <div className="popup" ref={popupRef}>
-            <h2>Venecia</h2>
             <form onSubmit={handleSubmit}>
               <label>
                 Email
@@ -62,7 +63,8 @@ const ButtonReserve = () => {
                 Hour
                 <input type="text" required />
               </label>
-              <button type="submit" className='btnSubmit'>Submit</button>
+              <ButtonSending/>
+              {/* <button type="submit" className='btnSubmit'>Submit</button> */}
             </form>
           </div>
         </div>

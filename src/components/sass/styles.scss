@@ -5,10 +5,27 @@
 @import "./base/mixins";
 // components 
 
-@import './components/body';
-@import './components/navbar';
-@import './components/brand';
-@import './scss/cartwidget';
-@import './components/itemlistcontainer';
+@import './scss/body';
+@import '../header/Brand/brand';
+@import '../header/CartWidget/cartwidget';
+@import '../header/NavBar/navbar';
+@import '../main/BackgroundHome/background-home';
+@import '../main/ButtonContactUs/buttoncontactus';
+@import '../main/ButtonGeneral/buttongeneral';
+@import '../main/ButtonReserve/buttonreserve';
+@import '../main/ButtonSending/buttonsending';
+@import '../main/CardHome/cardhome';
+@import '../main/Catalog/catalog';
+@import '../main/ColorSelector/ColorSelector';
+@import '../main/Contact/contact';
+@import '../main/InfoProducts/infoproducts';
+@import '../main/InfoVeneciaHome/infoveneciahome';
+@import '../main/ItemCount/itemcount';
+@import '../main/ItemDetail/ItemDetail';
+@import '../main/ItemListContainer/itemlistcontainer';
+@import '../main/NewsLetter/newsletter';
+@import '../main/PokeApi/pokeapi';
+@import '../main/ProductCard/ProductCard';
+@import '../main/Reserve/reservehome';
 @import '../footer/footer'
 
