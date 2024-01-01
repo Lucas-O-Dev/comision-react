@@ -1,4 +1,6 @@
 // App.jsx
+import $ from 'jquery';
+window.$ = window.jQuery = $;
 import React from 'react';
 import Navbar from './components/header/NavBar/Navbar';
 import ItemListContainer from './components/main/ItemListContainer/ItemListContainer';
@@ -10,6 +12,7 @@ import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom
 import { ToastContainer } from 'react-toastify';
 import { CartProvider } from './Context/CartContext';
 import './components/sass/scss/_body.scss';
+
 
 function App() {
   return (
@@ -35,7 +38,7 @@ function App() {
               }
             >
               <Route path="/" element={<Background />} />
-              <Route path="/Category/Products" element={<ItemListContainer greeting="Special Offers!" />} />
+              <Route path="/Category/Products" element={<ItemListContainer />} />
               <Route path="/Item/:productId" element={<ItemDetail />} />
               <Route path="/Category/:categoryId" element={<Contact />} />
             </Route>

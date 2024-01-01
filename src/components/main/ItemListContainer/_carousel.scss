@@ -1,0 +1,34 @@
+.carousel {
+  position: relative;
+  width: 60%; /* Ajusta el ancho según sea necesario */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px; /* Ajusta la altura según sea necesario */
+  background-color: #eee; /* Fondo del slide */
+  transition: opacity 0.5s ease-in-out; /* Transición de opacidad */
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Transición de color */
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}

@@ -1,5 +1,8 @@
 @charset "UTF-8";
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -188,7 +191,7 @@ nav a:hover {
 
 .buttonGeneral {
   display: flex;
-  padding: 0.625rem;
+  padding: 0.25rem;
   text-align: center;
   letter-spacing: 1px;
   text-decoration: none;
@@ -479,11 +482,10 @@ nav a:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
-  height: 30rem;
-  padding: 1.625rem;
+  padding: 182px;
   margin-top: 1.0625rem;
 }
 
@@ -565,26 +567,8 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
-.main-home .conteiner-greeting {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main-home .conteiner-greeting .greeting {
-  cursor: pointer;
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 1.25rem;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
-  background-color: #f49cbb;
-  border: 1px solid black;
-  border-radius: 0.75rem;
-  padding: 0.625rem;
-  color: black;
-}
 .main-home .list-container {
+  margin: 180px;
   display: flex;
   flex-direction: row;
   justify-content: center;

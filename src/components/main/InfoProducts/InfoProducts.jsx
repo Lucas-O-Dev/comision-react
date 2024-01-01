@@ -4,8 +4,7 @@ import './_infoproducts.scss'
 function InfoProducts() {
   return (
     <div className="containerInfoProducts">
-        <h2>Products</h2>
-        <p>"At Venecia, we collaborate with top beauty product brands to assure our customers that the product is of high quality."</p>
+        <p>"Venecia collaborates with premier beauty product brands to guarantee our customers the highest quality in every product."</p>
     </div>
   )
 }
