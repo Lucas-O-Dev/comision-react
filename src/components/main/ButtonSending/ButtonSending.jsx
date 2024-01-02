@@ -4,8 +4,8 @@ import '../ButtonSending/_buttonsending.scss'
 function ButtonSending() {
   return (
 <button className='buttonSending'>
-  <div class="svg-wrapper-1">
-    <div class="svg-wrapper">
+  <div className="svg-wrapper-1">
+    <div className="svg-wrapper">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

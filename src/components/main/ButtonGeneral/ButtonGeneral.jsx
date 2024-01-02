@@ -3,7 +3,7 @@ import '../ButtonGeneral/_buttongeneral.scss'
 
 function ButtonGeneral ({ text, onClick }) {
   return (
-    <button  onClick={onClick}>
+    <button className='buttonGeneral'  onClick={onClick}>
     {text}
   </button>
   )

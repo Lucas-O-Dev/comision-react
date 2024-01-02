@@ -1,17 +1,37 @@
 .carousel {
   position: relative;
-  width: 60%; /* Ajusta el ancho según sea necesario */
+  width: 100%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px; /* Ajusta la altura según sea necesario */
-  background-color: #eee; /* Fondo del slide */
-  transition: opacity 0.5s ease-in-out; /* Transición de opacidad */
+  height: 300px; /* Ajusta la altura según sea necesario */
+  background-color: #eee;
+  background-size: cover; /* Ajusta el tamaño del fondo */
+  background-position: center; /* Ajusta la posición del fondo */
+  transition: opacity 0.7s ease-in-out; /* Ajusta la duración de la transición */
+  animation: fade 3s ease-in-out; /* Ajusta la duración de la animación */
+  &.fade {
+    animation: fade 5s ease-in-out;
+  }
+  img{
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+    object-fit: cover; /* Ajusta el tamaño y recorte de la imagen para cubrir el contenedor */
+  }
+  }
+
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .arrow-button {
@@ -22,7 +42,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  transition: color 0.3s ease-in-out; /* Transición de color */
+  transition: color 0.7s ease-in-out; /* Ajusta la duración de la transición */
 }
 
 .prev {

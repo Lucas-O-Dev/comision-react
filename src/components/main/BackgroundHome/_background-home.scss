@@ -12,17 +12,32 @@
     justify-content: center;
     align-items: center;
     padding: 1.25rem;
-
     h2 {
         color: white;
         margin-bottom: 0.75rem;
         font-size: 1.5rem;
-        /* Propiedades de la animación */
         opacity: 0;
-        transform: translateX(-14px);
-        animation: fadeInRight 2s ease-out forwards;
+        transition: opacity 0.5s ease-out 0.5s, transform 0.5s ease-out 0.5s, font-size 0.2s ease;
+        animation: fadeInUp 0.5s ease-out 0.5s both;
+        &:hover {
+            font-size: 1.7rem; /* Ajusta el tamaño que desees para el hover */
+            cursor: pointer;
+        }
     }
-
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    
     p {
         /* Otras reglas de estilo para tu párrafo */
         color: white;

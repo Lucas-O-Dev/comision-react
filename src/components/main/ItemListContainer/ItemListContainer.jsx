@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import InfoProducts from '../InfoProducts/InfoProducts';
 import { ListCards } from './ListCards';
-import Catalog from '../Catalog/Catalog';
+import CarouselSixCategories from './CarouselSixCategories'
 import NewsLetter from '../NewsLetter/NewsLetter';
 import Carousel from './Carousel';
 import './_itemlistcontainer.scss';
@@ -29,10 +29,10 @@ const ItemListContainer = () => {
 
   return (
     <main className="main-home">
+      <CarouselSixCategories/>
       <InfoProducts />
       <Carousel/>
       <ListCards/>
-      <Catalog />
       <NewsLetter />
     </main>
   );
