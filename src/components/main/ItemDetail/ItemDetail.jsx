@@ -1,53 +1,79 @@
-// ItemDetail.jsx
-// ItemDetail.jsx
-import React, { useContext } from 'react';
-import ItemCount from '../ItemCount/ItemCount';
-import PokeApi from '../PokeApi/PokeApi';
-import { useParams } from 'react-router-dom';
-import ProductCard from '../ProductCard/ProductCard';
-import { CartContext } from '../../../Context/CartContext';  // Asegúrate de que la importación sea correcta
+    // ItemDetail.jsx
+    import React, { useState, useEffect, useContext } from 'react';
+    import { useParams } from 'react-router-dom';
+    import QuantitySelector from './QuantitySelector'
+    import productsData from '../Catalog/products.json';
+    import './_ItemDetail.scss';
+    import ColorSelector from './ColorSelector';
+    import { CartContext } from '../../../Context/CartContext';
 
-import './_ItemDetail.scss';
+        const ItemDetail = () => {
 
-const ItemDetail = () => {
-  const { productId } = useParams();
-  const { cart, setCart, addToCart } = useContext(CartContext);
+        const { id } = useParams(); // Obtén el parámetro id de la URL
+        const [ product, setProduct ] = useState( null );
+        const [ cantidad, setCantidad ] = useState( 1 );
+        const [color, setColor] = useState("");
+        const { addToCart } = useContext( CartContext )
 
-  // Simula la información del producto basada en productId
-  const productInfo = {
-    title: `Pollié Esmalte ${productId}`,
-    desc: `Color para el producto ${productId}`,
-    cost: `$${9.50 + parseFloat(productId)}`,
-    imageSrc: `../ItemListContainer/esmaltes${productId}.jpg`, // Asegúrate de tener la ruta correcta
-  };
 
-  const handleAddToCart = (quantity) => {
-    console.log(`Agregados al carrito: ${quantity} unidades para el producto ${productId}`);
-    console.log('Cart antes de la actualización:', cart);
-    
-    // Aquí puedes realizar acciones adicionales, como agregar el producto al carrito
-    const newItem = {
-      productId,
-      quantity,
-      // Otros detalles del producto que quieras agregar al carrito
-    };
 
-    // Actualizar el carrito utilizando setCart
-    addToCart(newItem);
-  };
 
-  console.log('Cart después de la actualización:', cart);
+        useEffect(() => {
+        // Simulando una solicitud asíncrona para cargar los datos del producto
+        // En una aplicación real, podrías utilizar fetch o axios para cargar datos desde un servidor
+        // En este caso, estamos utilizando un setTimeout para simular una carga asíncrona
+        const fetchData = () => {
+            setTimeout(() => {
+            // Aquí puedes usar productsData para obtener los datos del producto
+            const productId = parseInt(id);
+            const selectedProduct = productsData.productos.find(producto => producto.id === productId);
 
-  return (
-    <div className="conteiner-api">
-      <div className='item-count-container'>
-        <h2>Producto {productId}</h2>
-        <ProductCard {...productInfo} />
-        <ItemCount initial={0} min={1} max={10} onAdd={handleAddToCart} />
-      </div>
-      <PokeApi />
-    </div>
-  );
-};
+            setProduct( selectedProduct );
+            }, 1000 );}; // Simulamos un retardo de carga de 1 segundo
 
-export default ItemDetail;
+        fetchData();
+        }, []); // El array vacío [] asegura que este efecto se ejecute solo una vez, cuando el componente se monta
+
+
+
+        const handleAddItem = () => {
+
+          const itemToCart = {
+            ...product,
+            cantidad,
+            color
+          }  
+        
+          addToCart (itemToCart)
+        
+        }
+
+        if (!product) {
+        return <div>Cargando...</div>;
+        }
+
+
+        return (
+            <div className="containerItemDetail">
+            <div className='CardItemDetail'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+            </svg>
+            <h2>Detalles del Producto {id}</h2>
+            <p>{product.description}</p>
+            <p>Precio: ${product.price}</p>
+
+            <QuantitySelector 
+            cantidad={cantidad}
+            stock={product.stock}
+            setCantidad={setCantidad}
+            />
+
+            <ColorSelector setColor={setColor}/>
+            <button className="add-to-cart-button" onClick={handleAddItem}>
+            Add to cart!
+            </button>
+</div></div>
+          );};
+
+    export default ItemDetail;

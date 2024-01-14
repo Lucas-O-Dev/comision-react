@@ -5,6 +5,7 @@ import { ListCards } from './ListCards';
 import CarouselSixCategories from './CarouselSixCategories'
 import NewsLetter from '../NewsLetter/NewsLetter';
 import Carousel from './Carousel';
+import Catalog from '../Catalog/Catalog';
 import './_itemlistcontainer.scss';
 
 const ItemListContainer = () => {
@@ -32,6 +33,7 @@ const ItemListContainer = () => {
       <CarouselSixCategories/>
       <InfoProducts />
       <Carousel/>
+      <Catalog/>
       <ListCards/>
       <NewsLetter />
     </main>

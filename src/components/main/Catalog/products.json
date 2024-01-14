@@ -1,10 +1,10 @@
 {
     "productos": [
-    { "nombre": "Champú", "precio": 10.99, "categoria": "Cuidado del cabello","descripcion": "descripcion" },
-    { "nombre": "Acondicionador", "precio": 8.99, "categoria": "Cuidado del cabello", "descripcion": "descripcion" },
-    { "nombre": "Gel fijador", "precio": 5.49, "categoria": "Styling", "descripcion": "descripcion" },
-    { "nombre": "Esmaltes De Uñas", "precio": 12.99, "categoria": "Coloración", "descripcion": "descripcion" },
-    { "nombre": "Maquillaje Compacto", "precio": 12.99, "categoria": "Coloración", "descripcion": "descripcion" },
-    { "nombre": "Labiales", "precio": 12.99, "categoria": "Coloración", "descripcion": "descripcion" }
+    { "name": "Champú", "id":1, "price": 10.99, "category": "Cuidado del cabello","description": "descripcion","stock": 22 },
+    { "name": "Acondicionador", "id":2, "price": 8.99, "category": "Cuidado del cabello", "description": "descripcion","stock": 14 },
+    { "name": "Gel fijador", "id":3, "price": 5.49, "category": "Styling", "description": "descripcion","stock": 17 },
+    { "name": "Esmalte De Uña", "id":4, "price": 12.99, "category": "Coloración", "description": "descripcion","stock": 11 },
+    { "name": "Maquillaje Compacto", "id":5, "price": 12.99, "category": "Coloración", "description": "descripcion","stock": 20 },
+    { "name": "Labial", "id":6, "price": 12.99, "category": "Coloración", "description": "descripcion","stock": 16 }
     ]
 }

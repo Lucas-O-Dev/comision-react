@@ -1,21 +1,29 @@
-.conteiner-api {
+.containerItemDetail{
   display: flex;
-  width: 100%;
-  justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0;
   justify-content: center;
   align-items: center;
   text-align: center;
-  .item-count-container {
-    width: 100%;
-    max-width: 600px; // Ajusta el ancho máximo según tus necesidades
+  padding: 0.625rem;
+  .CardItemDetail{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 80px;
+    border: 2px solid black;
+    width: 40%;
+    .add-to-cart-button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 0.5rem;
+      }
+    svg{
+      width: 40px;
+      height: 40px;
+    }
   }
 }
