@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useEffect } from 'react';
 import InfoVeneciaHome from '../InfoVeneciaHome/InfoVeneciaHome';
 import ReserveHome from '../Reserve/ReserveHome';
-import './_background-home.scss';
+import './_background-home.scss'
 
 const Background = () => {
 

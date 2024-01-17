@@ -15,6 +15,7 @@ import Footer from './components/footer/Footer';
 import ItemDetail from './components/main/ItemDetail/ItemDetail';
 import Catalog from './components/main/Catalog/Catalog'; 
 import ViewCart from './components/main/ViewCart/ViewCart'
+import CheckOut from './components/main/CheckOut/CheckOut';
 import { CartProvider } from './Context/CartContext';
 
 
@@ -48,11 +49,10 @@ function App() {
               <Route path="/" element={<Background />} />
               <Route path="/Category/Products" element={<ItemListContainer />} />
               <Route path="/Category/:categoryId" element={<Contact />} />
-              {/* <Route path="/viewcart" element={<ViewCart />} /> */}
+              <Route path="/viewcart" element={<ViewCart />} />
               <Route path="/Catalog" component={<Catalog/>} />
               <Route path="/ItemDetail/:id" element={<ItemDetail/>} />
-              <Route path="/ViewCart" component={<ViewCart/>} />
-
+              <Route path="/CheckOut" element={<CheckOut />} />
               </Route>
 
 

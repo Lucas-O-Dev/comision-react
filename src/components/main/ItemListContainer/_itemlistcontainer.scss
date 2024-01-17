@@ -10,6 +10,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .conteinerFirebase{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 5rem;
+    }
     .list-container{
         margin: 180px;
         display: flex;

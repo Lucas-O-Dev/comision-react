@@ -5,7 +5,7 @@
     import productsData from '../Catalog/products.json';
     import './_ItemDetail.scss';
     import ColorSelector from './ColorSelector';
-    import { CartContext } from '../../../Context/CartContext';
+    import  CartContext  from '../../../Context/CartContext';
 
         const ItemDetail = () => {
 
